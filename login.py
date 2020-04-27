@@ -11,7 +11,7 @@ password = password.encode()
 
 def check_credentials(user):
 	if(user['email'] == email and bcrypt.checkpw(password, user['password'])):
-		print('Loged in!')
+		print('Logged in!')
 	else:
 		print('Wrong credentials!')
 
